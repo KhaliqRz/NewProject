@@ -1,0 +1,75 @@
+body{
+  height: 800px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+textarea{
+  width: 400px;
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+button{
+  width: 150px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  border: 0;
+}
+.export{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+.download{
+  display: grid;
+  gap: 20px;
+}
+
+.product{
+  display: grid;
+  gap: 20px;
+}
+.setting{
+  width: 160px;
+  height: 20px;
+}
+select{
+  width: 180px;
+  height: 30px;
+  font-size: 19px;
+}
+label{
+  font-size: 19px;
+}
+
+.search{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.error{
+  border: 1px solid red;
+  height: 25px;
+}
+.error::placeholder{
+  color: red;
+}
+
+table{
+  width: 700px;
+  font-size: 20px;
+  padding: 10px;
+}

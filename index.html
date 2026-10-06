@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Система импорта, экспорта и управления каталогом товаров</title>
+</head>
+<body>
+    <div class="export">
+        <textarea id="data-input" placeholder="Поле..."></textarea>
+        <div class="download">
+            <button id="import">Импортировать из поля</button>
+            <button id="import-json">Скачать JSON</button>
+            <button id="import-xml">Скачать XML</button>
+        </div>
+    </div>
+    <form name="myForm" class="product">
+        <label>Название товара  <input type="text" class="setting" name="text"></label>
+        <label>Цена  <input type="number" class="setting" name="number"></label>
+        <select name="category">
+            <option value="Электроника">Электроника</option>
+            <option value="Бытовая техника">Бытовая техника</option>
+            <option value="Мебель">Мебель</option>
+        </select>
+        <label>В наличии<input type="checkbox" name="check"></label>
+        <button type="submit" name="submit">Submit</button>
+    </form>
+    <div class="search">
+        <label>Search    <input type="search" id="search"></label>
+        <select id="category-filter"> 
+            <option value="Электроника">Электроника</option>
+            <option value="Бытовая техника">Бытовая техника</option>
+            <option value="Мебель">Мебель</option>
+        </select>
+    </div>
+    <div class="list-product">
+        <table id="table">
+            <tr>
+                <th>Название</th>
+                <th>Цена</th>
+                <th>Категория</th>
+                <th>Статус</th>
+            </tr>
+        </table>
+        <div class="statistic"></div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
