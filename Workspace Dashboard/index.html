@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Workspace Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div id="auth-block">
+            <form name="myForm" class="form center">
+                <label id="label">Name   <input type="text" id="name"></label>
+                <button id="enter">Войти</button>  
+            </form>
+            <button id="exit">Выйти</button>
+        </div>
+        
+        <div id="settings-block" class="settings center">
+            <select id="select">
+                <option value="">Theme</option>
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="green">Green</option>
+            </select>
+            <label><input type="checkbox" id="switch">Time switch</label>
+            <button id="reset">Reset</button>
+        </div>
+        <div id="draft-block" class="draft center">
+            <textarea id="area"></textarea>
+            <div class="indicator">hello</div>
+            <button id="export">Сохранить в основной архив</button>
+        </div>
+        <div id="archive-block" class="archive center">
+            <ul id="list"></ul>
+            <button id="export-json">Экспорт в JSON</button>
+            <button id="import">Импорт</button>
+            <textarea id="importArea"></textarea>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
