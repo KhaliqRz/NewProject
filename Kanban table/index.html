@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form class="start block" name="form">
+            <label>Task  <input type="text" id="task"></label>
+            <input type="submit" value="Add" id="add" class="button">
+            <ul id="task-list"></ul>
+        </form>
+        <div class="continue block">
+            <ul id="doing"></ul>
+        </div>
+        <div class="final block">
+            <ul id="final"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

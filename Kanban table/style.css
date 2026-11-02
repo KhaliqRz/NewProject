@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    width: 750px;
+    min-height: 500px;
+    border: 2px solid black;
+    border-radius: 4px;
+    display: flex;
+    margin-top: 50px;
+    font-size: 24px;
+    flex-wrap: nowrap;
+}
+
+.block{
+    width: 250px;
+    border: 1px solid black;
+    height: 100%;
+}
+input{
+    width: 100px;
+}
+
+button{
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    font-size: 18px;
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+.button{
+    background-color: white;
+    border: 1px solid black;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    font-size: 18px;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.none{
+    display: none;
+}
